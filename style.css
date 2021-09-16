@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    margin-top: 25vh;
+}
+
+.text dt {
+    font-size: 1.50em;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 20px 60px;
+    max-width: 350px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+}
+
+.text dt:after {
+    content: '+';
+    margin-left: 10px;
+}
+
+.text dt.ativo:after {
+    content: '-';
+    margin-left: 10px;
+}
+
+.text dd {
+    max-width: 350px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.text dd.ativo {
+    display: block;
+}
+
